@@ -1,0 +1,13 @@
+a := in
+b := in
+n := 0
+
+while a > 0 {
+    a = a - b
+    n = n + 1
+}
+
+out n
+if a != 0 {
+    out a + b
+}

@@ -1,0 +1,23 @@
+prime := in
+trial := 2
+isPrime := true
+
+maxTrial := 8
+if prime > 64
+    maxTrial = 16
+if prime > 256
+    maxTrial = 24
+if prime > 576
+    maxTrial = 32
+
+while trial < maxTrial and isPrime  {
+    p := prime
+    while p > 0 {
+        p = p - trial
+    }
+    if p == 0 {
+        out trial
+        isPrime = false
+    }
+    trial = trial + 1
+}

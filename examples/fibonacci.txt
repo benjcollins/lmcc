@@ -1,0 +1,9 @@
+a := 1
+b := 1
+
+while a < 999 {
+    out a
+    temp := a
+    a = a + b
+    b = temp
+}

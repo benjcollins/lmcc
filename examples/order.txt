@@ -1,0 +1,23 @@
+a := in
+b := in
+c := in
+
+if a > b and a > c {
+    out a
+    a = c
+}
+if b > c and b > a {
+    out b
+    b = c
+}
+if c > a and c > b {
+    out c
+}
+
+if a > b {
+    out a
+    out b
+} else {
+    out b
+    out a
+}

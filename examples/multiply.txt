@@ -1,0 +1,16 @@
+x := in
+y := in
+sum := 0
+
+if x > y {
+    temp := x
+    x = y
+    y = temp
+}
+
+while x > 0 {
+    x = x - 1
+    sum = sum + y
+}
+
+out sum
